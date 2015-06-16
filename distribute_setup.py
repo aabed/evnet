@@ -317,6 +317,7 @@ def _create_fake_setuptools_pkg_info(placeholder):
     log.warn('Creating %s', pth_file)
     f = open(pth_file, 'w')
     try:
+	import ipdb;ipdb.set_trace()
         f.write(os.path.join(os.curdir, setuptools_file))
     finally:
         f.close()
